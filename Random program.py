@@ -1,3 +1,4 @@
+# Import needed libraries (WHERE IS NUMPY?)
 import random;
 import statistics;
 
