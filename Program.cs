@@ -1,5 +1,18 @@
 ﻿class Program
 { 
+ // Make Median method.
+    public static double findMedian(double[] intarr, int n)
+    {
+      //Sort array
+        Array.Sort(intarr);
+      // See if n is even.
+        if (n % 2 != 0)
+            return (double)intarr[n];
+      // If not even then odd.
+        return (double)(intarr[(n - 1) / 2] + intarr[n / 2]) / 2.0;
+    }
+
+
     public static void Main(string[] args)
     {
         Random rnd = new Random();
@@ -16,6 +29,6 @@
         double min = intarr.Min();
         double mean = intarr.Average();
         //Print values to console
-        Console.WriteLine(" The Max number is " + max + " The Min number is " + min + " The Mean Number is " + mean);  
+        Console.WriteLine(" The Max number is " + max + " The Min number is " + min + " The Mean number is " + mean + " The Median number is " + findMedian(intarr,100));  
     }
 }
