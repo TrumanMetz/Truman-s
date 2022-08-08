@@ -21,7 +21,7 @@ plt.xlabel("X")
 plt.ylabel("Y")
 plt.show()
 
-
+# Write to CSV
 with open('Sine data.csv', 'w', newline='') as f:
     writer = csv.writer(f)
     writer.writerow(header)
