@@ -1,0 +1,31 @@
+class Sine
+{
+    public static int Main()
+    {
+        // Make empty list.
+        List <double> Degrees = new List <double> (36);
+        List <double> SineValues = new List<double>();
+        var Together = Degrees.Zip(SineValues, (first, second) => first + " " + second);
+        
+        // Populate list with values
+        for (int i = 0; i <= 360; i = i + 10)
+        {
+            Degrees.Add(i * Math.PI/180);//Convert to radians to use Math.Sine
+            SineValues.Add(Math.Sin(i * Math.PI/180));
+        }
+        // Print everything to console
+        for (int i = 0; i <= 36; i++) 
+        {
+            Console.WriteLine(Degrees[i]);
+            Console.WriteLine(SineValues[i]);
+        }
+        foreach (var item in Together)
+            Console.WriteLine(item);
+            
+        // Write to CSV file.
+        using (var writer = new StreamWriter("C-sharp_Sine.csv"))
+        using (var csv = new CsvWriter(writer, CultureInfo.InvariantCulture))
+        return 0;
+    }
+    
+}
