@@ -21,8 +21,10 @@ class Sine
         }
         foreach (var item in Together)
             Console.WriteLine(item);
+            
         // Write to CSV file.
-        
+        using (var writer = new StreamWriter("C-sharp_Sine.csv"))
+        using (var csv = new CsvWriter(writer, CultureInfo.InvariantCulture))
         return 0;
     }
     
