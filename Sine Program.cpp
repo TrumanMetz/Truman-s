@@ -17,6 +17,8 @@ int main()
 		arrayS[i] = sin(i * (3.14159/180));
 		cout << arrayS[i] << ','; 
 	}
+	
+	Write everything to csv.
 	std::ofstream myfile;
 	myfile.open("Sine program c++.csv");
 	for (int i = 0; i <= 37; i++) {
