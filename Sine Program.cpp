@@ -20,7 +20,7 @@ int main()
 	std::ofstream myfile;
 	myfile.open("Sine program c++.csv");
 	for (int i = 0; i <= 37; i++) {
-		myfile << arrayV[i] << "," << arrayS[i];
+		myfile << arrayV[i] << "," << arrayS[i] << endl;
 	}
 	myfile.close();
 }
