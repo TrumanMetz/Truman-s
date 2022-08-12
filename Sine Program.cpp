@@ -18,7 +18,7 @@ int main()
 		cout << arrayS[i] << ','; 
 	}
 	
-	Write everything to csv.
+	//Write everything to csv.
 	std::ofstream myfile;
 	myfile.open("Sine program c++.csv");
 	for (int i = 0; i <= 37; i++) {
