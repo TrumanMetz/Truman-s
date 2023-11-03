@@ -1,7 +1,7 @@
 # This minimalistic tool performs mathematical operations on Data recieved from a Thorlabs Intensity Noise Analyzer (PNA1). 
-# Including rescaling the data and plotting it for a different Vdc value and performing integration over the frequency domain. A peakfinder alorithm using scipy was also added to help with further analysis. 
+# Including rescaling the data and plotting it for a different Vdc value and performing integration over the frequency domain. A peakfinder algorithm using scipy was also added to help with further analysis. 
 # 
-# Disclaimer: This tool assumes the CSV being read is of the same format as those saved by the PNA1. This script will not function properly if any modifactions were made to the CSV beforehand 
+# Disclaimer: This tool assumes the CSV being read is of the same format as those saved by the PNA1. This script will not function properly if any modifactions were made to the CSV beforehand. 
 import time
 import os
 import sys
