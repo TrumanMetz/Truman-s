@@ -15,7 +15,7 @@ from scipy.signal import find_peaks
 
 def main():
     # Grabs and formats data from excel document.
-    ################################################################################## 
+
     pd.options.display.max_rows = 9999
     DataSheet = pd.read_csv('PNA-10.06.2023 14.27.36.csv',header = None, names = ['Frequency (Hz)', 'Mag^2 (V^2 / Hz)', 'PSD (dBV^2 / Hz)', 'RIN (dBc / Hz)', 'Integrated Volts RMS', 'Integrated RIN (%RMS)'], usecols=['Frequency (Hz)','Mag^2 (V^2 / Hz)','PSD (dBV^2 / Hz)','RIN (dBc / Hz)'], skiprows = [0,1,2,3,4,5,6], nrows= 9000)
     Frequency_array = DataSheet['Frequency (Hz)']
